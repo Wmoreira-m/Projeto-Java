@@ -241,6 +241,7 @@ public class Main {
 
                         case "4":
                             contaInvestimento.saldoAtual();
+                            break;
 
                         default:
                             JOptionPane.showMessageDialog(null, "Opção inválida, tente novamente.");
