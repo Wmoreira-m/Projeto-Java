@@ -36,10 +36,10 @@ public class Main {
             //Verifica se o nome do titular da conta contém apenas letras para continuar o código.
             do {
                 nome = JOptionPane.showInputDialog(null, "Digite o nome do titular da conta").toUpperCase();
-                if (nome.length() <=3 || nome.matches(".*\\d+.*")){
-                JOptionPane.showMessageDialog(null,"Nome do titular deve ter pelo menos mais de 3 letras. Por favor tente novamente.");
+                if (nome.length() <3 || nome.matches(".*\\d+.*")){
+                JOptionPane.showMessageDialog(null,"Nome do titular deve conter mais de 2 letras e nenhum tipo de número. Por favor tente novamente.");
             }
-            }while (nome.length() <=3 || nome.matches(".*\\d+.*"));
+            }while (nome.length() <3 || nome.matches(".*\\d+.*"));
 
 
             //Instanciando os Objetos de conta junto das variáveis preenchidas e usando o construtor padrão herdado na classe pai.
